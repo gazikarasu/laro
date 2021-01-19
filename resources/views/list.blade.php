@@ -8,7 +8,7 @@
 <th> Şifre</th>
 <th> Mail</th>
 <th>Telefon Numarası</th></tr>
-@foreach($users as $user)
+@foreach($data as $user)
 <tr>
 
 <td>{{$user->id}}</td>

@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\DenemeController;
 use\App \Http\Controllers\ListController;
+use\App\Http\Controllers\RegController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,6 +21,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/giris',[DenemeController::class,'giris']);
-Route::post('/kaydet',[DenemeController::class, 'getir']);
+Route::get('/giris',[RegController::class,'giris']);
+Route::post('/kaydet',[RegController::class, 'getir']);
 Route::get('/list',[ListController::class, 'listele']);
